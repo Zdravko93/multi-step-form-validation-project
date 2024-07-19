@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Multi-step form</title>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="container">
+      <!-- Sidebar start -->
+      <nav class="progress-track">
+        <ul class="progress-track__list">
+          <li class="progress-track__list__item">
+            <div class="circle active">1</div>
+            <div class="step-description">
+              <span>Step 1</span>
+              <b>Your info</b>
+            </div>
+          </li>
+          <li class="progress-track__list__item">
+            <div class="circle">2</div>
+            <div class="step-description">
+              <span>Step 2</span>
+              <b>Select Plan</b>
+            </div>
+          </li>
+          <li class="progress-track__list__item">
+            <div class="circle">3</div>
+            <div class="step-description">
+              <span>Step 3</span>
+              <b>Add-ons</b>
+            </div>
+          </li>
+          <li class="progress-track__list__item">
+            <div class="circle">4</div>
+            <div class="step-description">
+              <span>Step 4</span>
+              <b>Summary</b>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <!-- Sidebar end -->
+
+      <!-- FORM CONTAINER -->
+      <section class="form-container">
+        <!-- STEP 1 START -->
+        <div class="step step-1" aria-labelledby="step-1-heading">
+          <div class="headers">
+            <h1 class="title">Personal info</h1>
+            <p>
+              Please provide your name, email <span class="line-break"></span>adress, and phone number.</span>
+            </p>
+          </div>
+          <form>
+            <div class="input-control">
+              <div class="label">
+                <label for="name">Name <span aria-hidden="true">*</span></label>
+                <p id="name-error" class="error" aria-live="polite">This field is required</p>
+              </div>
+              <input type="text" id="name" placeholder="e.g. Stephen King" required
+              aria-describedby="name-error"
+              />
+            </div>
+            <div class="input-control">
+              <div class="label">
+                <label for="email">Email Adress <span aria-hidden="true">*</span></label>
+                <p id="email-error" class="error" aria-live="polite">This field is required</p>
+              </div>
+              <input
+                type="text"
+                id="email"
+                placeholder="e.g. stephenking@lorem.com"
+                required
+                aria-describedby="email-error"
+              />
+            </div>
+            <div class="input-control">
+              <div class="label">
+                <label for="phone">Phone Number <span aria-hidden="true">*</span></label>
+                <p id="phone-error" class="error">This field is required</p>
+              </div>
+              <input type="tel" id="phone" placeholder="e.g. +1 234 567 890" required 
+              aria-describedby="phone-error"
+              />
+            </div>
+          </form>
+          <div class="form-buttons">
+            <button type="submit" class="next-step-button">Next Step</button>
+          </div>
+        </div>
+        <!-- STEP 1 END -->
+        <!-- STEP 2 START -->
+        <div class="step step-2" aria-labelledby="step-2-heading">
+          <div class="headers">
+            <h1 class="title">Select your plan</h1>
+            <p>You have the option of monthly or yearly billing.</p>
+          </div>
+          <div class="billing-options">
+            <div class="option">
+                <img src="assets/images/icon-arcade.svg" alt="Arcade game icon" />
+                <div class="option__price">
+                  <b>Arcade</b>
+                  <span>$9/mo</span>
+                  <span class="yearly-price hidden">$90/yr</span>
+                </div>
+            </div>
+            <div class="option">
+                <img src="assets/images/icon-advanced.svg" alt="Advanced game icon" />
+                <div class="option__price">
+                  <b>Advanced</b>
+                  <span>$12/mo</span>
+                  <span class="yearly-price hidden">$120/yr</span>
+                </div>
+            </div>
+            <div class="option">
+              <img src="assets/images/icon-pro.svg" alt="Pro game icon" />
+               <div class="option__price">
+                  <b>Pro</b>
+                  <span>$15/mo</span>
+                  <span class="yearly-price hidden">$150/yr</span>
+                </div>
+            </div>
+          </div>
+          <div class="option__selected">
+            <div class="option__selected__switch__group">
+              <span class="option__selected__element__monthly active"
+                >Monthly</span
+              >
+              <label class="switch" for="toggle">
+                <input type="checkbox" id="toggle" />
+                <span class="slider round"></span>
+              </label>
+              <span class="option__selected__element__yearly">Yearly</span>
+            </div>
+          </div>
+          <div class="billing-error">Please select a billing option</div>
+          <div class="form-buttons">
+            <button type="button" class="previous-step-button previous-button-helper-class">Go Back</button>
+            <button type="submit" class="next-step-button next-button-helper-class">Next Step</button>
+          </div>
+        </div>
+        <!--STEP 2 END-->
+        <!-- STEP 3 START-->
+        <div class="step step-3" aria-labelledby="step-3-heading">
+          <div class="headers">
+            <h1 class="title">Pick add-ons</h1>
+            <p>Add-ons help enhance your gaming experience.</p>
+          </div>
+          <div class="services-options">
+            <div class="services-option">
+              <label for="option-1">
+                <input type="checkbox" id="option-1" />
+                <span class="checkmark"></span>
+              </label>
+              <div class="services-details">
+                <b>Online service</b>
+                <p>Access to multiplayer games</p>
+              </div>
+              <div class="service-price-wrap">
+                <span class="service-price">+$3/mo</span>
+                <span class="price-toggle hidden">+10$/yr</span>
+              </div>
+            </div>
+            <div class="services-option">
+              <label for="option-2">
+                <input type="checkbox" id="option-2" />
+                <span class="checkmark"></span>
+              </label>
+              <div class="services-details">
+                <b>Larger Storage</b>
+                <p>Extra 1TB of cloud save</p>
+              </div>
+              <div class="service-price-wrap">
+                <span class="service-price">+$2/mo</span>
+                <span class="price-toggle hidden">+20$/yr</span>
+              </div>
+            </div>
+            <div class="services-option">
+              <label for="option-3">
+                <input type="checkbox" id="option-3" />
+                <span class="checkmark"></span>
+              </label>
+              <div class="services-details">
+                <b>Customizable profile</b>
+                <p>Custom theme on your profile</p>
+              </div>
+              <div class="service-price-wrap">
+                <span class="service-price">+$2/mo</span>
+                <span class="price-toggle hidden">+14$/yr</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-buttons">
+            <button type="button" class="previous-step-button previous-button-helper-class">Go Back</button>
+            <button type="submit" class="next-step-button next-button-helper-class">Next Step</button>
+          </div>
+        </div>
+        <!-- STEP 3 END-->
+        <!-- STEP 4 START -->
+        <div class="step step-4" aria-labelledby="step-4-heading">
+          <div class="headers">
+            <h1 class="title">Finishing up</h1>
+            <p>Double-check everything looks OK before confirming.</p>
+          </div>
+          <div class="options-final">
+            <div class="options-final__helper__background">
+              <div class="options-final__payment__plan">
+                <!-- HERE GOES JAVASCRIPT -->
+
+                <!-- <div>
+                  <p class="charge"></p>
+                  <p class="charge-price"></p>
+                </div> -->
+                <hr>
+              </div>
+              <div class="options-final__list">
+                <!-- HERE GOES JAVASCRIPT -->
+
+                <!-- <div class="options-final__item">
+                  <p class="item"></p>
+                  <p class="price"></p>
+                </div> -->
+              </div>
+            </div>
+            <div class="pricing-total">
+              <!-- HERE GOES JAVASCRIPT -->
+
+
+              <!-- <div>
+                <p>Total</p>
+                <b>+$12/mo</b>
+              </div> -->
+            </div>
+            <div class="form-buttons">
+              <button type="button" class="previous-step-button previous-button-helper-class">Go Back</button>
+              <button type="submit" class=" next-button-helper-class confirm-button">Confirm</button>
+            </div>
+        </div>
+      </div>
+    <!-- STEP 5 START-->
+    <div class="step step-5">
+      <img src="assets/images/icon-thank-you.svg" alt="Thanks icon" />
+      <div class="headers">
+        <h1 class="title">Thank you!</h1>
+        <p>
+          Thanks for confirming your subscription! We hope you have fun
+          using our platform. If you ever need support, please feel free to
+          email us at support@loremgaming.com.
+        </p>
+      </div>
+    </div>
+  </section>
+ </main>
+    <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/Zdravko93" target="_blank">Zdravko</a>.
+    </div>
+  </body>
+</html>
