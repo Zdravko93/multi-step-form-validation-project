@@ -67,5 +67,5 @@ For more information or questions about this project, feel free to reach out:
 ## Author
 
 - Github - [Zdravko93](https://github.com/Zdravko93)
-- Frontend Mentor - [@Zdravko93](https://www.frontendmentor.io/profile/@Zdravko93)
+- Frontend Mentor - [@Zdravko93](https://www.frontendmentor.io/profile/Zdravko93)
 
