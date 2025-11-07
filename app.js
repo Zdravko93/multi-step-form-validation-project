@@ -302,6 +302,14 @@ function calculateTotalPrice() {
 
 billingOptions.forEach((option) => {
   option.addEventListener("click", highlightSelectedSubscription);
+
+  option.addEventListener("keydown", (event) => {
+    // Select with Enter or Space key
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault(); // prevent scrolling when pressing Space
+      option.click(); // trigger the same behavior as a mouse click
+    }
+  });
 });
 
 toggleSwitch.addEventListener("change", updateSubscriptionText);
