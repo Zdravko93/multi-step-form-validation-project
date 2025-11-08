@@ -684,9 +684,18 @@ button:focus-visible {
     border-radius: 3px;
   }
 
-  .step-2 {
-    position: relative;
-    margin-left: -1.5em; /* position step-2 for smaller screen sizes */
+  .billing-options {
+    margin-top: 1.5rem;
+    flex-direction: column;
+  }
+
+  .option {
+    flex-direction: row;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    width: 100%;
+    gap: 0.8rem;
+    margin: auto;
   }
 }
 /* 900px */
@@ -734,18 +743,7 @@ button:focus-visible {
   .step-2 {
     padding: 0 1rem 1rem;
   }
-  .billing-options {
-    margin-top: 1.5rem;
-    flex-direction: column;
-  }
-  .option {
-    flex-direction: row;
-    justify-content: flex-start;
-    box-sizing: border-box;
-    width: 100%;
-    gap: 0.8rem;
-    margin: auto;
-  }
+
   .step-3 {
     padding-inline: 1rem;
   }
