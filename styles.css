@@ -676,19 +676,15 @@ button:focus-visible {
 /* MEDIA QUERIES */
 /* 1000px  */
 @media screen and (max-width: 1000px) {
-  .option {
-    border: 2px solid red;
-  }
-
   .input-control input {
     border-radius: 3px;
   }
-}
-/* @media screen and (max-width: 960px) {
-  .option {
-    border: 2px solid red;
+
+  .step-2 {
+    position: relative;
+    margin-left: -1.5em; /* position step-2 for smaller screen sizes */
   }
-} */
+}
 /* 900px */
 @media screen and (max-width: 900px) {
   .progress-track {
@@ -802,6 +798,7 @@ button:focus-visible {
     font-size: 0.8rem;
   }
 }
+
 /* 460px */
 @media screen and (max-width: 460px) {
   .step-1 form {
