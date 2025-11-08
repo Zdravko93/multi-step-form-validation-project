@@ -3,6 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A multi-step form project by Zdravko, built as part of a Frontend Mentor challenge. Features responsive design, accessibility, and clean UI." />
+    <meta name="author" content="Zdravko" />
+    <meta name="robots" content="index, follow" />
+    
+    <meta property="og:title" content="Multi-Step Form | Frontend Mentor Challenge by Zdravko" />
+    <meta property="og:description" content="A multi-step validation form with accessible, responsive design and smooth user experience." />
+    <meta property="og:image" content="https://zdravko93.github.io/multi-step-form-validation-project/multi-step-form.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zdravko93.github.io/multi-step-form-validation-project/" />
+    <meta name="twitter:card" content="summary_large_image" />
+
     <link
       rel="icon"
       type="image/png"
@@ -16,8 +27,24 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Frontend Mentor | Multi-step form</title>
+    <title>Multi-Step Form | Frontend Mentor Challenge by Zdravko</title>
     <script type="module" src="app.js" defer></script>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "SoftwareSourceCode",
+  "name": "Multi-Step Form",
+  "author": {
+    "@type": "Person",
+    "name": "Zdravko"
+  },
+  "description": "Responsive and accessible multi-step form built as a Frontend Mentor challenge.",
+  "programmingLanguage": "JavaScript",
+  "codeRepository": "https://github.com/Zdravko93/multi-step-form-validation-project"
+}
+</script>
+
   </head>
   <body>
     <main class="container">
@@ -59,11 +86,11 @@
       <!-- FORM CONTAINER -->
       <section class="form-container">
         <!-- STEP 1 START -->
-        <div class="step step-1" aria-labelledby="step-1-heading">
+        <section class="step step-1" aria-labelledby="step-1-heading">
           <div class="headers">
             <h1 class="title">Personal info</h1>
             <p>
-              Please provide your name, email <span class="line-break"></span>adress, and phone number.</span>
+              Please provide your name, email <span class="line-break"></span>address, and phone number.
             </p>
           </div>
           <form>
@@ -78,7 +105,7 @@
             </div>
             <div class="input-control">
               <div class="label">
-                <label for="email">Email Adress <span aria-hidden="true">*</span></label>
+                <label for="email">Email Address <span aria-hidden="true">*</span></label>
                 <p id="email-error" class="error" aria-live="polite">This field is required</p>
               </div>
               <input
@@ -102,12 +129,12 @@
           <div class="form-buttons">
             <button type="submit" class="next-step-button">Next Step</button>
           </div>
-        </div>
+        </section>
         <!-- STEP 1 END -->
         <!-- STEP 2 START -->
-        <div class="step step-2" aria-labelledby="step-2-heading">
+        <section class="step step-2" aria-labelledby="step-2-heading">
           <div class="headers">
-            <h1 class="title">Select your plan</h1>
+            <h2 class="title">Select your plan</h2>
             <p>You have the option of monthly or yearly billing.</p>
           </div>
           <div class="billing-options">
@@ -153,12 +180,12 @@
             <button type="button" class="previous-step-button previous-button-helper-class">Go Back</button>
             <button type="submit" class="next-step-button next-button-helper-class">Next Step</button>
           </div>
-        </div>
+        </section>
         <!--STEP 2 END-->
         <!-- STEP 3 START-->
-        <div class="step step-3" aria-labelledby="step-3-heading">
+        <section class="step step-3" aria-labelledby="step-3-heading">
           <div class="headers">
-            <h1 class="title">Pick add-ons</h1>
+            <h2 class="title">Pick add-ons</h2>
             <p>Add-ons help enhance your gaming experience.</p>
           </div>
           <div class="services-options">
@@ -209,12 +236,12 @@
             <button type="button" class="previous-step-button previous-button-helper-class">Go Back</button>
             <button type="submit" class="next-step-button next-button-helper-class">Next Step</button>
           </div>
-        </div>
+        </section>
         <!-- STEP 3 END-->
         <!-- STEP 4 START -->
-        <div class="step step-4" aria-labelledby="step-4-heading">
+        <section class="step step-4" aria-labelledby="step-4-heading">
           <div class="headers">
-            <h1 class="title">Finishing up</h1>
+            <h2 class="title">Finishing up</h2>
             <p>Double-check everything looks OK before confirming.</p>
           </div>
           <div class="options-final">
@@ -250,25 +277,24 @@
               <button type="button" class="previous-step-button previous-button-helper-class">Go Back</button>
               <button type="submit" class=" next-button-helper-class confirm-button">Confirm</button>
             </div>
-        </div>
-      </div>
+        </section>
     <!-- STEP 5 START-->
-    <div class="step step-5">
+        <section class="step step-5">
       <img src="assets/images/icon-thank-you.svg" alt="Thanks icon" />
       <div class="headers">
-        <h1 class="title">Thank you!</h1>
+        <h2 class="title">Thank you!</h2>
         <p>
           Thanks for confirming your subscription! We hope you have fun
           using our platform. If you ever need support, please feel free to
           email us at support@loremgaming.com.
         </p>
       </div>
-    </div>
-  </section>
+        </section>
+      </section>
  </main>
     <div class="attribution">
         Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer"
         >Frontend Mentor</a
         >. Coded by <a href="https://github.com/Zdravko93" target="_blank">Zdravko</a>.
     </div>
