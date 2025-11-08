@@ -79,7 +79,7 @@ formInputs.forEach((input, index) => {
     } else if (index === 1 && !emailRegEx.test(value)) {
       errorMessage = "Please enter a valid email adress";
     } else if (index === 2 && !phoneRegEx.test(value)) {
-      errorMessage = "Phone number must be in a format of 10 digits";
+      errorMessage = "Must be 10-digit format";
     }
 
     setErrorMessage(index, errorMessage);

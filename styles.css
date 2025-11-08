@@ -768,6 +768,39 @@ button:focus-visible {
   .options-final__item .price {
     font-size: 14px;
   }
+
+  .error {
+    font-size: 0.6rem;
+  }
+
+  .step {
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  /* Main title */
+  .title {
+    font-size: 1.3rem !important;
+  }
+
+  .step-1 .headers p {
+    font-size: 0.8rem !important;
+  }
+
+  .step-1 .input-control {
+    min-width: 250px;
+    margin: auto;
+  }
+
+  .step-1 label {
+    font-size: 0.6rem;
+  }
+  .step-1 input {
+    font-size: 0.6rem;
+  }
+  .step-1 input::placeholder {
+    font-size: 0.6rem;
+  }
 }
 /* 550px */
 @media screen and (max-width: 550px) {
@@ -811,10 +844,6 @@ button:focus-visible {
     font-size: 0.9rem;
   }
 
-  .input-control input,
-  .input-control input::placeholder {
-    font-size: 0.9rem;
-  }
   .form-buttons {
     position: fixed;
     bottom: 0;
