@@ -49,11 +49,11 @@ function validateForm() {
       isValid = false;
     } else if (index === 0 && !nameRegEx.test(value)) {
       // if 'index === 0 ' - user is typing inside name input field
-      errorMessage = "Please add valid Lastname/Firstname";
+      errorMessage = "Please add valid name";
       isValid = false;
     } else if (index === 1 && !emailRegEx.test(value)) {
       // if 'index === 1' - user is typing inside email input field
-      errorMessage = "Please enter a valid email adress";
+      errorMessage = "Please enter a valid email";
       isValid = false;
     } else if (index === 2 && !phoneRegEx.test(value)) {
       // if 'index === 2' - user is typing inside phone number input field
@@ -75,9 +75,9 @@ formInputs.forEach((input, index) => {
     if (value === "") {
       errorMessage = "This field is required";
     } else if (index === 0 && !nameRegEx.test(value)) {
-      errorMessage = "Please enter your Lastname/Firstname";
+      errorMessage = "Please enter valid name";
     } else if (index === 1 && !emailRegEx.test(value)) {
-      errorMessage = "Please enter a valid email adress";
+      errorMessage = "Please enter a valid email";
     } else if (index === 2 && !phoneRegEx.test(value)) {
       errorMessage = "Must be 10-digit format";
     }

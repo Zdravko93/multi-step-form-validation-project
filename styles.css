@@ -180,17 +180,21 @@ body {
   font-weight: 500;
   color: var(--color-cool-gray);
 }
+
 .label {
   margin-bottom: -12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-label {
   font-size: 0.8rem;
   color: var(--color-marine-blue);
   font-weight: 500;
 }
+
+.label span {
+  color: red;
+}
+
 .error {
   color: var(--color-strawberry-red);
   font-weight: 500;
