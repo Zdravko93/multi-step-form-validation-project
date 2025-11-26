@@ -1,25 +1,44 @@
-# Frontend Mentor - Multi-step form solution
+# Multi-Step Form | Frontend Mentor Challenge Solution
 
-This project is my professional solution to the [Multi-Step form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ). It demonstrates my ability to build accessible, responsive, and user-friendly front-end applications with strong attention to UX and form validation.
+A responsive, accessible, and interactive multi-step form built with HTML, CSS, and JavaScript. This project demonstrates professional front-end development skills, including real-time form validation, user-friendly UX, semantic markup, and responsive design for all device sizes.
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Screenshot](#screenshot)
+- [Links](#links)
+- [Installation & Usage](#installation-and-usage)
+- [Project Goals](#project-goals)
+- [Contributing](#contributing)
+- [Contact](#contact)
+- [Author](#author)
 
 ## Overview
 
-This dynamic multi-step form guides users through a structured, intuitive process of inputting personal and billing information. It features real-time validation, visual progress tracking, and a responsive layout, ensuring a smooth and engaging experience on any device.
+This dynamic multi-step form guides users through a structured, intuitive process of inputting personal and billing information. It features:
+
+- Real-time validation
+- Visual progress tracking
+- Responsive Layout
+
+ensuring a smooth and engaging experience across desktop, tablet, and mobile devices.
 
 ### Features
 
-- Multi-Step Flow: Simplifies data entry by breaking the form into clear, manageable steps
-- Real-Time Validation: Each input is validated instantly to provide helpful feedback and prevent errors
-- Progress Tracker: A sidebar visually displays which step the user is on and what’s next
-- Responsive Design: Fully optimized for desktop, tablet, and mobile viewing
-- Accessible UI: Semantic HTML and ARIA attributes improve usability for all users.
-- Error Handling: Clear, user-friendly error states ensure a frustration-free experience.
+- Multi-Step Flow: Breaks forms into manageable steps for a clear user journey
+- Real-Time Validation: Instant input feedback to prevent errors
+- Progress Tracker: Sidebar highlights current and upcoming steps
+- Responsive Design: Fully optimized for all device sizes
+- Accessible UI: Semantic HTML and ARIA attributes for improved usability
+- Error Handling: Clear and user-friendly error states
 
 ### Tech Stack
 
 - HTML5: Semantic structure and accessible markup
-- CSS3: Responsive styling and modern layout techniques (Flexbox)
-- JavaScript: Handles step navigation, dynamic validation, and state management
+- CSS3: Modern styling using Flexbox and responsive techniques
+- JavaScript: Handles navigation, validation, and dynamic state management
 
 ### Screenshot
 
@@ -27,8 +46,8 @@ This dynamic multi-step form guides users through a structured, intuitive proces
 
 ### Links
 
-- Solution URL: [Github](https://github.com/Zdravko93/multi-step-form-validation-project)
-- Live Site URL: (https://zdravko93.github.io/multi-step-form-validation-project/)
+- Solution URL: [Github Repository](https://github.com/Zdravko93/multi-step-form-validation-project)
+- Live Site URL: [Live Demo](https://zdravko93.github.io/multi-step-form-validation-project/)
 
 ## Installation
 
@@ -43,9 +62,9 @@ git clone https://github.com/Zdravko93/multi-step-form-validation-project.git
 
 ## Usage
 
-1. Open index.html in your preferred web browser
+1. Open `index.html` in your preferred web browser
 2. Complete each step by entering the required information
-3. Real-time validation ensures that all inputs are correct before continuing
+3. Real-time validation ensures that all inputs are correct before proceeding
 4. After the final confirmation, a success message is displayed
 
 ## Project Goals
@@ -60,11 +79,11 @@ This project highlights my focus on:
 ## Contributing
 
 Contributions and suggestions are welcome.
-If you’d like to contribute, fork the repository and submit a pull request with your improvements.
+To contribute, fork the repository and submit a pull request with your improvements.
 
 ## Contact
 
-Feel free to connect or reach out for collaboration opportunities:
+Connect or reach out for collaboration opportunities:
 
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/zdravkodelic/)
 - GitHub - [Zdravko93](https://github.com/Zdravko93)
@@ -72,4 +91,4 @@ Feel free to connect or reach out for collaboration opportunities:
 
 ## Author
 
-Zdravko Delic – Front-End Developer passionate about clean design, accessibility, and creating intuitive digital experiences.
+**Zdravko Delic** – Front-End Developer passionate about **clean design**, **accessibility**, and creating **intuitive digital experiences**.
