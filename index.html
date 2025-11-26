@@ -3,17 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="A multi-step form project by Zdravko, built as part of a Frontend Mentor challenge. Features responsive design, accessibility, and clean UI." />
-    <meta name="author" content="Zdravko" />
+    <!--SEO-->
+      <title>Multi-Step Form | Frontend Mentor Challenge by Zdravko93</title>
+    <meta name="description" content="A responsive, accessible multi-step form built by Zdravko93 for a Frontend Mentor challenge. Includes validation, plan selection, add-ons, and smooth UX." />
+    <meta name="author" content="Zdravko93" />
     <meta name="robots" content="index, follow" />
-    
-    <meta property="og:title" content="Multi-Step Form | Frontend Mentor Challenge by Zdravko" />
-    <meta property="og:description" content="A multi-step validation form with accessible, responsive design and smooth user experience." />
-    <meta property="og:image" content="https://zdravko93.github.io/multi-step-form-validation-project/multi-step-form.png" />
+
+     <!-- Canonical URL -->
+    <link rel="canonical" href="https://zdravko93.github.io/multi-step-form-validation-project/">
+
+     <!-- Open Graph -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://zdravko93.github.io/multi-step-form-validation-project/" />
+    <meta property="og:title" content="Multi-Step Form | Frontend Mentor Challenge by Zdravko93" />
+    <meta property="og:description" content="A multi-step validation form with responsive design, accessibility, and smooth user experience." />
+    <meta property="og:image" content="https://zdravko93.github.io/multi-step-form-validation-project/multi-step-form.png" />
+    
+     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Multi-Step Form | Frontend Mentor Project" />
+    <meta name="twitter:description" content="A responsive and accessible multi-step form built as a challenge project." />
+    <meta name="twitter:image" content="https://zdravko93.github.io/multi-step-form-validation-project/multi-step-form.png" />
 
+    <!--FONTS & STYLES-->
     <link
       rel="icon"
       type="image/png"
@@ -27,9 +39,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Multi-Step Form | Frontend Mentor Challenge by Zdravko</title>
+  
+      <!--JAVASCRIPT-->
     <script type="module" src="js/app.js" defer></script>
 
+    <!-- JSON-LD Sructured Data -->
     <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
@@ -37,11 +51,18 @@
   "name": "Multi-Step Form",
   "author": {
     "@type": "Person",
-    "name": "Zdravko"
+    "name": "Zdravko93"
   },
   "description": "Responsive and accessible multi-step form built as a Frontend Mentor challenge.",
   "programmingLanguage": "JavaScript",
-  "codeRepository": "https://github.com/Zdravko93/multi-step-form-validation-project"
+  "codeRepository": "https://github.com/Zdravko93/multi-step-form-validation-project",
+    "keywords": [
+      "multi-step form",
+      "form validation",
+      "frontend mentor",
+      "vanilla js",
+      "responsive form ui"
+    ]
 }
 </script>
 
@@ -139,7 +160,7 @@
           </div>
           <div class="billing-options">
             <div class="option"  tabindex="0">
-                <img src="assets/images/icon-arcade.svg" alt="Arcade game icon" />
+                <img src="assets/images/icon-arcade.svg" alt="Arcade subscription plan" />
                 <div class="option__price">
                   <b>Arcade</b>
                   <span>$9/mo</span>
@@ -147,7 +168,7 @@
                 </div>
             </div>
             <div class="option"  tabindex="0">
-                <img src="assets/images/icon-advanced.svg" alt="Advanced game icon" />
+                <img src="assets/images/icon-advanced.svg" alt="Advanced subscription plan" />
                 <div class="option__price">
                   <b>Advanced</b>
                   <span>$12/mo</span>
@@ -155,7 +176,7 @@
                 </div>
             </div>
             <div class="option"  tabindex="0">
-              <img src="assets/images/icon-pro.svg" alt="Pro game icon" />
+              <img src="assets/images/icon-pro.svg" alt="Pro subscription plan" />
                <div class="option__price">
                   <b>Pro</b>
                   <span>$15/mo</span>
@@ -275,13 +296,13 @@
             </div>
             <div class="form-buttons">
               <button type="button" class="previous-step-button previous-button-helper-class">Go Back</button>
-              <button type="submit" class=" next-button-helper-class confirm-button">Confirm</button>
+              <button type="submit" class="next-button-helper-class confirm-button">Confirm</button>
             </div>
         </section>
     <!-- STEP 5 START-->
         <section class="step step-5">
-      <img src="assets/images/icon-thank-you.svg" alt="Thanks icon" />
-      <div class="headers">
+      <img src="assets/images/icon-thank-you.svg" alt="Thank you illustration" />
+      <div class="headers" aria-live="polite">
         <h2 class="title">Thank you!</h2>
         <p>
           Thanks for confirming your subscription! We hope you have fun
