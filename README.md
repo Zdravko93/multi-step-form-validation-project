@@ -44,6 +44,30 @@ ensuring a smooth and engaging experience across desktop, tablet, and mobile dev
 
 ![Multi-step-form-validation](/multi-step-form.png)
 
+### Lighthouse Report
+
+This project was audited using Google Lighthouse for both mobile and desktop performance.
+
+**Mobile Scores**:
+
+- Performance: 94
+- Accessibility: 95
+- Best Practices: 96
+- SEO: 100
+
+![Lighthouse Mobile Report](Lighthouse-report-mobile.png)
+
+**Desktop Scores**:
+
+- Performance: 99
+- Accessibility: 95
+- Best Practices: 100
+- SEO: 100
+
+![Lighthouse Desktop Report](Lighthouse-report-desktop.png)
+
+⚡ These scores demonstrate that the project is optimized for speed, accessibility, best practices, and SEO, ensuring a high-quality user experience on all devices.
+
 ### Links
 
 - Solution URL: [Github Repository](https://github.com/Zdravko93/multi-step-form-validation-project)
